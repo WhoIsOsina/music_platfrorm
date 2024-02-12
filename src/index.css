@@ -1,4 +1,19 @@
+:root {
+  --background: #f56868;
+  --color: #000;
+  --change-time: 0.7s;
+  --position: 25%;
+}
+
+:root[theme='dark'] {
+  --background: #080074;
+  --color: #fff;
+  --change-time: 0.7s;
+  --position: 175%;
+}
+
 body {
   padding: 0;
   margin: 0;
+  font-size: max(24px, 1.5vw);
 }

@@ -1,5 +1,53 @@
+
+
+
 .header {
-    width: 100vw;
+    width: 100%;
     height: max(40px, 5vw);
-    background: pink;
+    background-color: var(--background);
+    color: var(--color);
+    transition: background-color var(--change-time);
+}
+
+.element__container{
+    height: 100%;
+    margin: 0 40px;
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.element__wrapper {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+a {
+    margin-right: max(20px, 5vw);
+    color: var(--color);
+    text-decoration: none;
+}
+
+a::after {
+    content: '';
+    display: block;
+    height: 1px;
+    background: var(--color);
+    transition: 0.3s ease all;
+    width: 0;
+}
+
+a:hover::after{
+    width: 100%;
+    transition: 0.3s ease all;
+}
+
+
+
+.icon {
+    height: max(30px, 3.5vw);
+    width: max(30px, 3.5vw);
+    border-radius: 50%;
 }
