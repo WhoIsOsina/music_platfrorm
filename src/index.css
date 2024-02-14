@@ -6,7 +6,8 @@
 }
 
 :root[theme='dark'] {
-  --background: #080074;
+  --background: #6c63eb;
+  --main-backgound: #191829;
   --color: #fff;
   --change-time: 0.7s;
   --position: 175%;
@@ -16,4 +17,14 @@ body {
   padding: 0;
   margin: 0;
   font-size: max(24px, 1.5vw);
+  background: var(--main-backgound);
+}
+
+.page__wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: var(--color);
+  transition: all var(--change-time);
+  border: 2px solid red;
 }

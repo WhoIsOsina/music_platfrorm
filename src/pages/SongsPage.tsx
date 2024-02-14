@@ -1,9 +1,10 @@
 import React from 'react';
+import SongItem from '../components/items/song/SongItem';
 
 const SongsPage = () => {
   return (
-    <div>
-      SONGS PAGE
+    <div className='page__wrapper'>
+      <SongItem/>
     </div>
   );
 }

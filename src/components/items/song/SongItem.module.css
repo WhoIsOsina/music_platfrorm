@@ -1,0 +1,28 @@
+.wrapper {
+    width: 70%;
+    height: max(40px, 5vw);
+    border: 2px solid green;
+    display: flex;
+    align-items: center;
+
+}
+
+.picture {
+    width: max(40px, 5vw);
+    height: max(40px, 5vw);
+    background-color: red;
+}
+
+.IconButton {
+    width: max(40px, 5vw);
+    height: max(40px, 5vw);
+}
+
+.IconButton:hover {
+    background: transparent;
+}
+
+.PlayArrow {
+    width: max(40px, 5vw);
+    height: max(40px, 5vw);
+}
