@@ -5,11 +5,15 @@ import Layout from "./components/layout/Layout";
 import SongsPage from "./pages/SongsPage";
 import AlbumsPage from "./pages/AlbumsPage";
 import ArtistPage from "./pages/ArtistPage";
+import { Provider } from "react-redux";
+import { store } from "./store/store";
+import Player from "./components/items/player/Player";
 
 
 const App = () => {
 
   return (
+    <Provider store={store}>
     <BrowserRouter>
         <Layout/>
         <Routes>
@@ -21,6 +25,7 @@ const App = () => {
             <Route path='*' element={<Navigate replace to='songs'/>}></Route>
         </Routes>
     </BrowserRouter>
+    </Provider>
   );
 }
 

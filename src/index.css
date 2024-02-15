@@ -26,5 +26,5 @@ body {
   align-items: center;
   color: var(--color);
   transition: all var(--change-time);
-  border: 2px solid red;
+  position: relative;
 }

@@ -50,4 +50,5 @@ a:hover::after{
     height: max(30px, 3.5vw);
     width: max(30px, 3.5vw);
     border-radius: 50%;
+    overflow: hidden;
 }

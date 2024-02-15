@@ -1,10 +1,9 @@
-import React from 'react';
-import SongItem from '../components/items/song/SongItem';
+import SongList from '../components/items/song/SongList';
 
 const SongsPage = () => {
   return (
     <div className='page__wrapper'>
-      <SongItem/>
+      <SongList/>
     </div>
   );
 }

@@ -2,6 +2,7 @@ import { Link } from 'react-router-dom'
 import style from './Layout.module.css'
 import { FC, PropsWithChildren, useState } from 'react'
 import ChangeThemeButton from '../buttons/ChangeThemeButton'
+import Player from '../items/player/Player'
 
 
 const Layout: FC<PropsWithChildren> = ({children}) => {
@@ -10,7 +11,9 @@ const Layout: FC<PropsWithChildren> = ({children}) => {
       <div className={style.header}>
         <div className={style.element__container}>
           <div className={style.element__wrapper}>
-            <div className={style.icon} style={{background: 'green'}}></div>
+            <div className={style.icon}>
+              <img src="/logo.svg" alt="logo" style={{width: 'max(30px, 3.5vw)', height: 'max(30px, 3.5vw)'}} />
+            </div>
           </div>
           <div className={style.element__wrapper}>
             <Link to='songs'>ПЕСНИ</Link>
@@ -30,11 +33,14 @@ const Layout: FC<PropsWithChildren> = ({children}) => {
               }
             }}>change</button> */}
             <ChangeThemeButton></ChangeThemeButton>
-            <div className={style.icon} style={{background: 'red'}}></div>
+            <div className={style.icon}>
+              <img src="/face.jpg" alt="profile" style={{width: 'max(30px, 3.5vw)', height: 'max(30px, 3.5vw)'}} />
+            </div>
           </div>
         </div>
       </div>
       <div>{children}</div>
+      <Player/>
     </div>
   )
 }
